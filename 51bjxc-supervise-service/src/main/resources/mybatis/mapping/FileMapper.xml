@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.bjxc.supervise.mapper.FileMapper">
+	
+	<!-- 
+	<insert id="addFile" parameterType="com.bjxc.supervise.TimeSystemFile" useGeneratedKeys="true" keyProperty="id">
+		insert into timesystemfile(type,url,createtime)
+		Values(#{type},#{url},now())
+	</insert>
+	 -->
+	
+	
+	<insert id="addFile" parameterType="com.bjxc.supervise.TimeSystemFile" useGeneratedKeys="true" keyProperty="id">
+		insert into t_time_system_file(type,url,create_time)
+		
+		Values
+		
+		(#{type},#{url},now())
+	
+	</insert>
+</mapper>
